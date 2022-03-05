@@ -6,6 +6,7 @@ import React from "react";
 import { About } from "./components/Pages/About";
 import { Home } from "./components/Pages/Home";
 import { Services } from "./components/Pages/Services";
+import { Portfolio } from "./components/Pages/Portfolio";
 
 
 
@@ -29,6 +30,11 @@ const App = () => {
         <Route 
           path="/service" 
           element={PageWrapper(Services)}
+        />
+
+        <Route
+          path="/portfolio"
+          element={PageWrapper(Portfolio)}
         />
       </Routes>
       
