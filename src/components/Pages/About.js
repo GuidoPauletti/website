@@ -1,7 +1,16 @@
 import React from "react";
+import image from "../Assets/img/about.jpg"
+import { Header } from "../Common/Header";
 
 export const About = () => (
-    <section className="page-section" id="about">
+    <div>
+        <Header
+            title = "About us"
+            subtitle = "THIS IS OUR BRAND"
+            showButton = {false}
+            image = {image}
+        />
+        <section className="page-section" id="about">
             <div className="container">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">About</h2>
@@ -66,5 +75,7 @@ export const About = () => (
                 </ul>
             </div>
         </section>
+    </div>
+    
         
 )

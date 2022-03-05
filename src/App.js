@@ -5,6 +5,9 @@ import React from "react";
 // Pages
 import { About } from "./components/Pages/About";
 import { Home } from "./components/Pages/Home";
+import { Services } from "./components/Pages/Services";
+
+
 
 
 const App = () => {
@@ -21,6 +24,11 @@ const App = () => {
         <Route 
           path="/about" 
           element={PageWrapper(About)}
+        />
+
+        <Route 
+          path="/service" 
+          element={PageWrapper(Services)}
         />
       </Routes>
       

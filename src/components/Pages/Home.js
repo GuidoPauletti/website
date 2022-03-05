@@ -1,11 +1,15 @@
 import React from "react";
+import { Header } from "../Common/Header";
+import image from "../Assets/img/header-bg.jpg"
+
 
 export const Home = () => (
-    <header className="masthead">
-        <div className="container">
-            <div className="masthead-subheading">Welcome To Our Studio!</div>
-            <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
-            <a className="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-        </div>
-    </header>
+    <Header
+        title = "Welcome To Our Studio!"
+        subtitle = "IT'S NICE TO MEET YOU"
+        buttonText = "tell me more"
+        showButton = {true}
+        link = "/services"
+        image = {image}
+    />
 )
