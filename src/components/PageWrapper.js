@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Footer } from './Common/Footer';
 
  export const PageWrapper = (props) => (
      <div>
@@ -12,7 +13,7 @@ import { Link } from 'react-router-dom';
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/service">Services</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/portfolio">Portfolio</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
@@ -22,5 +23,6 @@ import { Link } from 'react-router-dom';
             </div>
     </nav>
     {props()}
+    <Footer/>
     </div>
 )

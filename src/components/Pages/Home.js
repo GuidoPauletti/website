@@ -9,7 +9,7 @@ export const Home = () => (
         subtitle = "IT'S NICE TO MEET YOU"
         buttonText = "tell me more"
         showButton = {true}
-        link = "/services"
+        link = "/service"
         image = {image}
     />
 )

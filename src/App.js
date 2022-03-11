@@ -7,6 +7,8 @@ import { About } from "./components/Pages/About";
 import { Home } from "./components/Pages/Home";
 import { Services } from "./components/Pages/Services";
 import { Portfolio } from "./components/Pages/Portfolio";
+import { Team } from "./components/Pages/Team";
+import { Contact } from "./components/Pages/Contact";
 
 
 
@@ -35,6 +37,16 @@ const App = () => {
         <Route
           path="/portfolio"
           element={PageWrapper(Portfolio)}
+        />
+
+        <Route
+          path="/team"
+          element={PageWrapper(Team)}
+        />
+
+        <Route
+          path="/contact"
+          element={PageWrapper(Contact)}
         />
       </Routes>
       
